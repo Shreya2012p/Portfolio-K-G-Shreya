@@ -1,0 +1,9 @@
+#wrapper-canvas canvas {
+    max-width: 100%;
+}
+.align-right {
+    position: absolute;
+    right: 0;
+    top: 50%; /* adjust the top position to your liking */
+    transform: translateY(-50%);
+  }

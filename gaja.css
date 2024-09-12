@@ -1,0 +1,123 @@
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity:0;
+    background:linear-gradient(to center, #f5f5ff, #0f0f0f);
+    border: 1px solid rgba(236, 232, 232, 0.15);
+    box-shadow: inset 0px 0px 20px 5px rgba(241, 239, 239, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width:800px;
+    padding:20px 50px;
+    border-radius: 10px;
+    z-index:1000;
+    transition:top 0ms ease-in-out 300ms,
+               opacity 300ms ease-in-out 0ms,
+              transform 300ms ease-in-out 0ms;
+}
+.popup.active{
+    top:50%;
+    transform:translate(-50%,-50%) scale(1);
+    opacity:1;
+    transition:top 0ms ease-in-out 0ms,
+                opacity 300ms ease-in-out 0ms,
+                transform 300ms ease-in-out 0ms;
+
+}
+.popup .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:25px;
+    height:25px;
+    font-size:30px;
+    text-align:center;
+    line-height:25px;
+    color: #165ee4;
+    background-color: rgb(236, 229, 229);
+    border-radius:50% ;
+    cursor:pointer;
+}
+.popup h2 {
+    color:rgb(252, 241, 241);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px; /* Adjust the size as needed */
+    margin-bottom: 10px;
+}
+
+.popup p {
+    width: 60%;
+    color: white;
+    text-align: justify;
+    margin: 0 auto;
+    text-align:justify;/* Justify text */
+    display: inline-block;
+    vertical-align: top;
+}
+.image {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+
+   
+    
+}
+.cv-eye, .cv-download {
+  float:right;
+  margin-right:-5px;
+  top:5px;
+  position: relative;
+  background: linear-gradient(to right, #043458, #4ab0f8); /* Gradient color */
+  border-radius:5px;
+  outline:none;
+  font-size:16px;
+  color:#ffffff; /* Change text color to white to contrast with gradient background */
+  padding:10px 5px;
+  cursor:pointer;
+  transition: background-position 0.3s ease-in-out; /* Add transition effect */
+  line-height: 24px;
+  margin-left: 10px; /* add some space to the left of the button */
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: background-position 0.3s ease-in-out;
+}
+.cv-eye:hover, .cv-download:hover {
+  background: linear-gradient(to right, #022268, #05c5e7); 
+}
+
+.cv-eye i, .cv-download i {
+  margin-right: 10px; /* add some space between icon and text */
+}
+
+.cv-eye span, .cv-download span {
+  font-weight: bold; /* make text bold */
+}
+
+.container{
+    position:absolute;
+    top:130%;
+    left:90px;
+    transform:translate(-50%,-50%);
+}
+button#open-popup{
+    background: linear-gradient(to right, #1968a5, #41a7f0); /* Gradient color */
+    border-radius:5px;
+    outline:none;
+    font-size:16px;
+    color:#ffffff; /* Change text color to white to contrast with gradient background */
+    padding:10px 30px;
+    cursor:pointer;
+    text-transform:uppercase;
+    transition: background 0.3s ease-in-out; /* Add transition effect */
+}
+
+button#open-popup:hover{
+    background: linear-gradient(to right, #02385f, #9dccf1); /* Reverse gradient color on hover */
+}
+
